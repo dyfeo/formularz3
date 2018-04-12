@@ -1,0 +1,43 @@
+h2 {
+    color: darkblue;
+}
+
+h3 {
+    color: lightblue;
+    font-style: italic;
+}
+
+fieldset {
+    width: 700px;
+    margin-bottom: 10px;
+}
+
+
+#customer label,
+#content select,
+    {
+    display: inline-block;
+    width: auto;
+    outline: none;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+#customer input {
+    width: 300px;
+}
+
+#content select {
+    width: 200px;
+    margin-top: 20px;
+}
+
+#content label {
+    width: auto;
+}
+
+#content,
+#customer {
+    padding-left: 50px;
+    padding-bottom: 20px;
+}

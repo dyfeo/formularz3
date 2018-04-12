@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>A Simple Form</h2>
+
+    <h3>Form Fundamentals</h3>
+
+    <form action="https://formspree.io/anna.stambulska@gmail.com" method="POST" id="form-styled">
+
+        <fieldset id="customer">
+            <legend id="customer-info">Customer Info</legend>
+            
+            <!-- Pole imię -->
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autocomplete="on" required placeholder="Enter your name">
+            </p>
+            
+            <!-- Pole telefon -->
+            <p>
+                <label for="telefon">Telephone:</label>
+                <input type="tel" id="telefon" name="tel" autocomplete="on" required placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </p>
+
+            <!-- Pole email -->
+            <p>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" autocomplete="on" required placeholder="Enter your email address" multiple>
+            </p>
+
+
+
+        </fieldset>
+
+        <fieldset id="content">
+            <legend id="books-info">Books</legend>
+
+            <!-- Lista rozwijana ksiazki -->
+            <select name="book" id="books">
+                <option value="diuna">Diuna</option>
+                <option value="blade runner">Blade Runner</option>
+                <option value="solaris">Solaris</option>
+                <option value="wojna swiatow">Wojna światów</option>
+                <option value="kopula">Kopuła</option>
+            </select>
+
+            <!-- Ilość  -->
+            <label for="quantity">Quantity (Maximum 5):</label>
+            <input type="text" id="quantity" name="ilosc" autocomplete="on" required pattern="[1-5]{1}">
+        </fieldset>
+
+
+        <!-- Przycisk wyslij -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
